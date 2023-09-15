@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import styles from './ShowQuote.module.css';
 
 const ShowQuote = () => {
     // useParams hook is part of the React Router library, specifically React Router
@@ -23,10 +24,12 @@ const ShowQuote = () => {
         fetchQuote();
     } , [])
   return (
-    <div>
-        <h2>{quote.author}</h2>
-        <p>{quote.text}</p>
-    </div>
+    <div className={styles.wrapper}>
+        <div className={styles.container}>
+        <h2 className={styles.author}>{quote.author}</h2>
+        <p className={styles.text}>{quote.text}</p>
+        </div>
+    </div >
   )
 }
 

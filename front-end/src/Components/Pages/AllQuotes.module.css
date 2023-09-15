@@ -1,0 +1,66 @@
+/* AllQuotes.module.css */
+
+
+/* Container for the entire component */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Heading style */
+
+.heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+
+/* List of quotes */
+
+.quoteList {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* Individual quote card style */
+
+.quoteCard {
+    margin-bottom: 20px;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style for the Quote component within the card */
+
+.quoteCard .author {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.quoteCard .text {
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* Hover effect for the quote cards */
+
+.quoteCard:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}

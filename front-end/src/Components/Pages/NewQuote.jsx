@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import styles from './NewQuote.module.css'
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
+import styled from '@emotion/styled'
 
 const NewQuote = () => {
   let navigate = useNavigate();
@@ -29,7 +30,9 @@ const NewQuote = () => {
   // ...
 
 return (
-  <div>
+  <div className={styled.wrapper}>
+
+  <div className='container'>
     <form action="" onSubmit={addQuoteHandler} className={styles.newquote}>
       <div>
         <label htmlFor='author'>Author:</label>
@@ -41,6 +44,7 @@ return (
       </div>
       <button className={styles.submitButton}>Add Quote</button>
     </form>
+  </div>
   </div>
 );
 

@@ -1,0 +1,53 @@
+/* ShowQuote.module.css */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* Container for the entire component */
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    /* height: 100vh; */
+}
+
+
+/* Author's name style */
+
+.author {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+
+/* Quote text style */
+
+.text {
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* Responsiveness for smaller screens */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
