@@ -1,0 +1,74 @@
+/* NewQuote.css */
+
+.newquote {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.newquote label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.newquote input[type="text"],
+.newquote textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.newquote button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.newquote button:hover {
+    background-color: #0056b3;
+}
+
+.newquote button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.newquote h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+
+/* Center the form within the container */
+
+.newquote form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Responsiveness for smaller screens */
+
+@media (max-width: 768px) {
+    .newquote {
+        width: 90%;
+    }
+}
